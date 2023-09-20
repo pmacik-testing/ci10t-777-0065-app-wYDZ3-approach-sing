@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-nofu
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-777-0065-tenant/ci10t-777-0065-app/devfile-sample-nofu@sha256:b10e41e820406df1a1b8def2848ace1eb44b9dc0783eac91e185a0da3c0695aa
+        name: my-nodejs
+        resources: {}
+status: {}
